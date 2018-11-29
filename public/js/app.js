@@ -13907,6 +13907,9 @@ var app = new Vue({
   el: '#app'
 });
 
+// Custom Scripts
+__webpack_require__(54);
+
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -47395,6 +47398,36 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */
+/***/ (function(module, exports) {
+
+// 
+// Custom JS file
+// 
+
+// onclick function of banner trigger
+$(".banner-trigger").click(function () {
+    banner = $(".banner");
+
+    // if banner open then close, else if closed then open
+    if (banner.hasClass("banner-open")) {
+        banner.removeClass("banner-open");
+    } else {
+        banner.addClass("banner-open");
+    }
+});
 
 /***/ })
 /******/ ]);

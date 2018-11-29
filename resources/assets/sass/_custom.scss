@@ -1,3 +1,30 @@
 // Import Header
 @import "header";
 
+// gallery styling
+.gallery{
+    margin-top: 6rem;
+    &-item{
+        position: relative;
+        overflow: hidden;
+        margin: 1rem;
+        cursor: pointer;
+        &-img, &-title{
+            width: 100%;
+        }
+        &-img{
+            transition: all 600ms ease-in-out;
+            transform: scale(1,1);
+            &:hover{
+                transition: all 600ms ease-in-out;
+                transform: scale(1.1, 1.1);
+            }
+        }
+        &-title{
+            opacity: 0;
+            text-align: center;
+            margin-top: 25%;
+            position: absolute;
+        }
+    }
+}
